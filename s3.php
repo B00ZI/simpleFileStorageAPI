@@ -13,8 +13,8 @@ $content = "testing file content ";
 
 $applicationKey = "K005OXOL5XUMeFshX4IBpcN/n5VfFzI";
 $keyName =  "fileStorage-app";
-$keyID = "keyID";
-$Emdpoint = "s3.us-east-005.backblazeb2.com";
+$keyID = "0057fbd734b45860000000001";
+$Endpoint = "https://s3.us-east-005.backblazeb2.com";
 
 $Bucket = "fileStorageLearning";
 
@@ -22,6 +22,7 @@ $Bucket = "fileStorageLearning";
 $s3 = new S3Client([
     'version' => 'latest',
     'region'  => 'us-east-005',
+    'endpoint' => $Endpoint,
     'credentials' => [
          'key' => $keyID,
          'secret' => $applicationKey,
