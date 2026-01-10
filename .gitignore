@@ -1,0 +1,10 @@
+# Ignore the entire dependencies folder
+/vendor/
+
+# Ignore local environment settings (important for security)
+.env
+local.php
+
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
