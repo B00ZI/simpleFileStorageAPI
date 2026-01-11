@@ -20,6 +20,7 @@ class localStorage implements FileStorage
 
 
         file_put_contents($savePath, $content);
+        echo("localy Saved succesfuly");
     }
 }
 

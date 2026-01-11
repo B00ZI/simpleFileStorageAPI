@@ -4,6 +4,7 @@
 # Ignore local environment settings (important for security)
 .env
 local.php
+/storage/
 
 # Ignore OS-generated files
 .DS_Store

@@ -24,8 +24,9 @@ class s3Storage implements FileStorage
                 'Bucket' => $this->Bucket,
                 'Key'    => $name,
                 'Body'   => $content,
-
+            
             ]);
+            echo ("uplouded to s3 succesfuly");
         } catch (AwsException $e) {
 
             echo "Error: " . $e->getAwsErrorMessage();
